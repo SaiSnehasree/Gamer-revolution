@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Gamer Revolution</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+  <link rel="icon" type="image/x-icon" href="Screenshot 2025-01-18 191934.png">
+  <title>Gamer Revolution</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToRc3Zq0oQB1rFdeBJ1wQV946FyQL27r8Usg&s") no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-form {
+      padding: 30px;
+      max-width: 400px;
+      background: rgb(42 42 42 / 3%);
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #37183f;
+    }
+
+    .login-form .form-group input {
+      background: #333;
+      color: white;
+      border: none;
+      padding: 10px;
+    }
+
+    .login-form .btn {
+      background: #37183f;
+      color: white;
+      border: none;
+    }
+
+    .login-form .btn:hover {
+      background: #37183f;
+    }
+
+    @media (max-width: 768px) {
+      .login-form {
+        width: 90%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+  <div class="login-form">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" class="form-control" required>
+      </div>
+      <div style="padding: 61px;" class="form-group">
+        <button type="submit" class="btn btn-block">Login</button>
+      </div>
+      <div>
+      <p style="text-decoration: underline; color: rgb(150, 139, 119); margin-left:6rem; margin-top: -3rem;">Forgot password</p></div>
+    </form>
+  </div>
+  <button style="margin-left: 14rem; background-color: rgba(0, 0, 0, 0.5);"><a style="text-decoration: none;" href="index.html">Home</a></button>
+  </div>
+</body>
+
+</html>
